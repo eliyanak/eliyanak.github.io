@@ -1,26 +1,21 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Eliya Nakamura",
     "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "picture": "https://github.com/eliyanak.png",
+    "email": "eliyanak@hawaii.edu",
+    "phone": "808-224-2183",
+    "website": "https://eliyanak.github.io",
+    "summary": "I am a student at the University of Hawaii at Manoa currently majoring in computer engineering. I expect to graduate in spring 2023 with my bachelor's degree and in spring 2024 with my master's degree.",
+    "location": { "address": "", "postalCode": "96706", "city": "Ewa Beach", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "eliyanak", "url": "http://github.com/eliyanak" },
+      { "network": "linkedin", "username": "eliyanakamura", "url": "http://linkedin.com/in/eliyanakamura" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Software engineering" },
+    { "name": "Game development" }
   ],
   "skills": [
     {
