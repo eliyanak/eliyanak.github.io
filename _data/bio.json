@@ -6,7 +6,7 @@
     "email": "eliyanak@hawaii.edu",
     "phone": "808-224-2183",
     "website": "https://eliyanak.github.io",
-    "summary": "I am a student at the University of Hawaii at Manoa currently majoring in computer engineering. I expect to graduate in spring 2023 with my bachelor's degree and in spring 2024 with my master's degree.",
+    "summary": "I am an undergraduate student at the University of Hawaii at Manoa currently majoring in computer engineering. I expect to graduate in spring 2023 with my bachelor's degree and in spring 2024 with my master's degree.",
     "location": { "address": "", "postalCode": "96706", "city": "Ewa Beach", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "eliyanak", "url": "http://github.com/eliyanak" },
@@ -14,8 +14,10 @@
     ]
   },
   "interests": [
-    { "name": "Software engineering" },
-    { "name": "Game development" }
+    { "name": "Software Engineering" },
+    { "name": "Game Development" },
+    { "name": "Web Design" },
+    { "name": "App Development" }
   ],
   "skills": [
     {
