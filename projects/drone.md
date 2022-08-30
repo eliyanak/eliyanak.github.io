@@ -1,13 +1,14 @@
 ---
 layout: project
 type: project
-image: img/drone/drone.svg
+image: img/drone/drone.jpg
 title: "Drone Programming and Control"
 date: 2021-2022
 published: true
 labels:
-  - Wireless Security
+  - Drones
   - Python
+  - Wireless Security
 summary: "This is an introductory project in which we learned how to remotely control a drone to complete various tasks through the use of software such as QGroundControl and by writing Python scripts."
 ---
 
