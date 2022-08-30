@@ -61,3 +61,4 @@ def arm_and_takeoff(aTargetAltitude):
 
 arm_and_takeoff(3)
 ```
+Click [here](https://docs.google.com/presentation/d/1Spg-cYv_HIr1Y0wLw7PTHKQTtB-F1mT2O4TgucA4lBY/edit?usp=sharing) to view additional information.
