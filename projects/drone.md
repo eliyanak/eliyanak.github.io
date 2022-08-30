@@ -13,15 +13,51 @@ summary: "This is an introductory project in which we learned how to remotely co
 ---
 
 <div class="text-center p-4">
-  <img width="75%" src="../img/wt-setup.png" class="img-thumbnail">
+  <img width="75%" src="../img/drone/ourdrone.png" class="img-thumbnail">
 </div>
 
-WatchTower is an IoT system that was created as a final project for EE 368: Cyber-Physical Systems. Its purpose is to give beachgoers an easy way to access current beach conditions at any Hawaii beach. Each individual Raspberry Pi device is calibrated with IBM Cloud and Node-RED to display information for a specific beach, but other devices can easily be connected and calibrated for any additional beaches. [This video](https://www.youtube.com/watch?v=a2mU8cClEGM) provides a summary and demonstration of how the system operates.
-
-The device has a physical component, which displays the current beach condition (low, medium, high, or extreme) on a spinner display powered by a Servo. The display also has an LED light, which illuminates to notify users that there is a special alert and that they should check the Hawaii Beach Safety website for more details. There is also a software component which displays information about every device connected to the system, the beach it is currently calibrated to, and its current condition.
-
-Below is the Node-RED flow setup that we used in order to send the beach data to each of our Raspberry Pi devices.
+For my junior project, I was part of a Vertically Integrated Project (VIP) that taught us the basics of drone operation, programming, and security. We started by familiarizing ourselves with how to operate a SkyViper drone with its included joystick controller. Once we grew comfortable with that, we then learned how to use software tools such as ArduPilot and QGroundControl to remotely control the drone's path, speed, and other flight characteristics.
 
 <div class="text-center p-4">
-  <img width="60%" src="../img/wt-nodered.PNG" class="img-thumbnail" >
+  <img width="60%" src="../img/drone/drone_qgc.png" class="img-thumbnail" >
 </div>
+
+Our next steps involved learning how to write Python scripts that automatically completed tasks similarly to what we did with QGroundControl. Below is a sample program that tells the drone to takeoff and fly to a specified altitude. 
+
+```python
+from dronekit import connect
+vehicle = connect('0.0.0.0:14550', wait_ready=True)
+
+def arm_and_takeoff(aTargetAltitude):
+    print("Basic pre-arm checks")
+    # Don't try to arm until autopilot is ready
+    while not vehicle.is_armable:
+        print(" Waiting for vehicle to initialise...")
+        time.sleep(1)
+
+    print("Arming motors")
+    # Copter should arm in GUIDED mode
+    vehicle.mode = VehicleMode("GUIDED")
+    vehicle.armed = True
+
+    # Confirm vehicle armed before attempting to take off
+    while not vehicle.armed:
+        print(" Waiting for arming...")
+        time.sleep(1)
+
+    print("Taking off!")
+    vehicle.simple_takeoff(aTargetAltitude)  # Take off to target altitude
+
+    # Wait until the vehicle reaches a safe height before processing the goto
+    #  (otherwise the command after Vehicle.simple_takeoff will execute
+    #   immediately).
+    while True:
+        print(" Altitude: ", vehicle.location.global_relative_frame.alt)
+        # Break and return from function just below target altitude.
+        if vehicle.location.global_relative_frame.alt >= aTargetAltitude * 0.95:
+            print("Reached target altitude")
+            break
+        time.sleep(1)
+
+arm_and_takeoff(3)
+```
