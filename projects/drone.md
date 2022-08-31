@@ -3,12 +3,14 @@ layout: project
 type: project
 image: img/drone/drone.jpg
 title: "Drone Programming and Control"
-date: 2021-2022
+date: 2021
 published: true
 labels:
   - Drones
   - Python
   - Wireless Security
+  - Virtual Machines
+  - Linux
 summary: "This is an introductory project in which we learned how to remotely control a drone to complete various tasks through the use of software such as QGroundControl and by writing Python scripts."
 ---
 
@@ -16,7 +18,9 @@ summary: "This is an introductory project in which we learned how to remotely co
   <img width="75%" src="../img/drone/ourdrone.png" class="img-thumbnail">
 </div>
 
-For my junior project, I was part of a Vertically Integrated Project (VIP) that taught us the basics of drone operation, programming, and security. We started by familiarizing ourselves with how to operate a SkyViper drone with its included joystick controller. Once we grew comfortable with that, we then learned how to use software tools such as ArduPilot and QGroundControl to remotely control the drone's path, speed, and other flight characteristics.
+For my junior project, I was part of a Vertically Integrated Project (VIP) that taught us the basics of drone operation, programming, and security. We started by installing an Ubuntu virtual machine on each of our devices so we could run a series of tutorial simulations provided by ArduPilot. This software utilized a commmand line to control various aspects of the drone such as its flight mode, home location, and current missions. These simulations allowed us to familiarize ourselves with the software before we moved on to working with the actual drone.
+
+Once we grew comfortable with that, we then moved on to learning how to operate the drone with its included joystick controller. With the practice we had through the earlier tutorials, we then began to utilize software tools such as QGroundControl to remotely control the drone's path, speed, and other flight characteristics.
 
 <div class="text-center p-4">
   <img width="60%" src="../img/drone/drone_qgc.png" class="img-thumbnail" >
