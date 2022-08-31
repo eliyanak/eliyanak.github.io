@@ -10,7 +10,7 @@ labels:
   - Learning
 ---
 
-<img width="60%" class="rounded float-start pe-4" src="../img/programming.jpg">
+<img width="30%" class="rounded float-start pe-4" src="../img/programming.jpg">
 
 ## Experiences with JavaScript
 
