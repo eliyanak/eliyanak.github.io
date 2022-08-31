@@ -75,36 +75,27 @@
       ]
     },
     {
-      "organization": "Hawaii Foodbank",
+      "organization": "",
       "website": "",
-      "position": "Volunteer",
-      "startDate": "2021",
-      "endDate": "2022",
+      "position": "Volunteer work",
+      "startDate": "",
+      "endDate": "",
       "summary": "",
-      "highlights": ""
-    },
-    {
-      "organization": "Oahu SPCA",
-      "website": "",
-      "position": "Volunteer",
-      "startDate": "2020",
-      "endDate": "2021",
-      "summary": "",
-      "highlights": ""
+      "highlights": ["Hawaii Foodbank, 2021-2022", "Oahu SPCA, 2020-2021"]
     }
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "title": "Provost Achievement Scholarship",
+      "date": "2019-present",
+      "awarder": "University of Hawaii at Manoa",
+      "summary": "4 year scholarship awarded to incoming Hawaii high school students with a cumulative GPA of 3.8 and above."
     },
     {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "Manoa Service Award",
+      "date": "2020-2022",
+      "awarder": "University of Hawaii at Manoa",
+      "summary": "Scholarship awarded to students who maintain a GPA of 2.0 and above and complete 50 hours of community service."
     }
   ],
   "references": [
