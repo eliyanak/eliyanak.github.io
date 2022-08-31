@@ -24,3 +24,7 @@ Below is the Node-RED flow setup that we used in order to send the beach data to
 <div class="text-center p-4">
   <img width="60%" src="../img/wt-nodered.PNG" class="img-thumbnail">
 </div>
+
+I was mainly responsible for much of the Node-RED code illustrated above, which was used to retrieve the data from the Hawaii Beach Safety API and extract the relevant information such as the beach's current conditions. This data was then run through a JSON parser so that it could be sent to the Raspberry Pi devices. 
+
+Working on this project was one of my first true team engineering experiences. I learned a lot about learning how to implement an IoT system, as well as learning how to develop a device that uses both software and hardware components in tandem.
