@@ -63,18 +63,6 @@
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
-    {
       "organization": "",
       "website": "",
       "position": "Professional organization involvement",
@@ -82,10 +70,27 @@
       "endDate": "",
       "summary": "",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "Webmaster, IEEE Student Branch Executive Board, 2022-Present",
+        "Member, IEEE Student Branch, 2019-Present"
       ]
+    },
+    {
+      "organization": "Hawaii Foodbank",
+      "website": "",
+      "position": "Volunteer",
+      "startDate": "2021",
+      "endDate": "2022",
+      "summary": "",
+      "highlights": ""
+    },
+    {
+      "organization": "Oahu SPCA",
+      "website": "",
+      "position": "Volunteer",
+      "startDate": "2020",
+      "endDate": "2021",
+      "summary": "",
+      "highlights": ""
     }
   ],
   "awards": [
