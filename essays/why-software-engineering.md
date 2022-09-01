@@ -11,7 +11,7 @@ labels:
   - About Me
 ---
 
-<img width="25%" class="rounded float-start pe-4" src="../img/gaming.jpg">
+<img width="25%" class="rounded float-start pe-4" src="../img/gaming1.jpg">
 
 ## Got Any Games?
 Going into software engineering is always a good bet for anyone looking to find a job in the technology industry. Not only is there a high demand for more workers, there is also a wide variety of opportunities available in various subdisciplines, such as cybersecurity and app development. My personal interests lie in game development, app development, and potentially web design, although I am open to working in any fields that require programming knowledge. Gaming in particular has been an interest of mine from a young age. Immersing myself into these virtual worlds, interacting with people, and just having fun were things that brought me great joy as a kid. Although I was far from the most experienced or skilled player out there, what really piqued my interest was *how* these games worked--for example, how was it possible to create different game modes and modify various aspects of my in-game character? I began to slowly explore these interests more as I got older. In high school, I created my own Flappy Bird knockoff game, dubbed SuperCat, for one of my final projects. I also learned how to use a framework called LÖVE to write basic 2D games in the programming language Lua.
