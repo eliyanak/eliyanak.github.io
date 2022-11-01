@@ -38,4 +38,4 @@ After implementing the basic functionality, some ideas for advanced features inc
 - Support a FAQ page that users not in projects to add questions on the projects where they can be answered by others
 - Support a project proposal page, which allows users to submit any project ideas they have. This can be viewed by other users (students and faculty), who can contact the author if they are interested in the project.
 
-**Authors:** Andee Gary, Eliya Nakamura
+**Authors:** Andee Gary, Eliya Nakamura, Brooke Maeda
