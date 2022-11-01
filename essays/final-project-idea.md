@@ -10,7 +10,7 @@ labels:
 ## Overview
 *The problem:* Many UH Manoa engineering students struggle to find an updated listing of all the x96 projects that they can join. In addition, it can be somewhat of a hassle to individually contact each professor in their department about what projects they have available. Another issue is that it is difficult to gauge the number of students working on the project; some may prefer a specific group size or may want to work with specific individuals.
 
-*The solution:* This application gives students a convenient way to view all the available x96 projects on one convenient page. Each project listing will show the project name, a brief summary, and the faculty advisor. Furthermore, students can create an account and log in to view more detailed information about each project. This includes the list of students involved in the project and any videos or documentation.
+*The solution:* x96 Connect gives students a convenient way to view all the available engineering x96 projects on one convenient page. Each project listing will show the project name, a brief summary, and the faculty advisor. Furthermore, students can create an account and log in to view more detailed information about each project. This includes the list of students involved in the project and any videos or documentation.
 
 ## Approach
 The landing page will have a list of available x96 projects where students would be able to view a brief summary of the project along with the project advisor. If you are not signed in you are only able to view this landing page and are unable to enter the project pages without an account.
@@ -37,3 +37,5 @@ After implementing the basic functionality, some ideas for advanced features inc
 - Support the ability to remove and add users to each project as people enter/leave the project.
 - Support a FAQ page that users not in projects to add questions on the projects where they can be answered by others
 - Support a project proposal page, which allows users to submit any project ideas they have. This can be viewed by other users (students and faculty), who can contact the author if they are interested in the project.
+
+**Authors:** Andee Gary, Eliya Nakamura
