@@ -4,7 +4,7 @@ type: essay
 title: "Why Software Engineering?"
 # All dates must be YYYY-MM-DD format!
 date: 2022-09-01
-published: true
+published: false
 labels:
   - Software Engineering
   - Learning
