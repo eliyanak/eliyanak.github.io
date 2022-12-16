@@ -15,7 +15,7 @@ labels:
 summary: "A website that allows students at the University of Hawaii at Manoa to see what vendors are currently available."
 ---
 
-For our ICS 314 final project, we chose to create a website that allows users to see what restaurants are open on UH Manoa's campus at any given point in time. Users can also create an account to specify their dietary preferences, while vendors can create an account to specify their operating hours, location, and more. Click [here](http://143.110.235.49/) to visit our project page, which provides further details about our website and its different features. 
+For our ICS 314 final project, we chose to create a website that allows users to see what restaurants are open on UH Manoa's campus at any given point in time. Users can also create an account to specify their dietary preferences, while vendors can create an account to specify their operating hours, location, and more. Click [here](https://manoa-eateries.github.io/) to visit our project page, which provides further details about our website and its different features. 
 
 <div class="text-center p-4">
     <img width="60%" src="../img/manoa-eateries/landing.png" class="img-thumbnail">
