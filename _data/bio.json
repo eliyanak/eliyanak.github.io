@@ -1,0 +1,107 @@
+{
+  "basics": {
+    "name": "Eliya Nakamura",
+    "label": "Student",
+    "picture": "https://github.com/eliyanak.png",
+    "email": "eliyanak@hawaii.edu",
+    "phone": "808-224-2183",
+    "website": "https://eliyanak.github.io",
+    "summary": "I am an undergraduate student at the University of Hawaii at Manoa currently majoring in computer engineering. I expect to graduate in spring 2023 with my bachelor's degree and in spring 2024 with my master's degree.",
+    "location": { "address": "", "postalCode": "96706", "city": "Ewa Beach", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "eliyanak", "url": "http://github.com/eliyanak" },
+      { "network": "linkedin", "username": "eliyanakamura", "url": "http://linkedin.com/in/eliyanakamura" }
+    ]
+  },
+  "interests": [
+    { "name": "Software Engineering" },
+    { "name": "Game Development" },
+    { "name": "Web Design" },
+    { "name": "App Development" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C", "C++", "Java", "JavaScript", "Python", "HTML/CSS", "SQL", "Kotlin", "Verilog"]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "Linux", "Android", "Raspberry Pi", "Arduino", "Git/GitHub"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Engineering (expected Spring, 2023)",
+      "studyType": "B.S.",
+      "startDate": "2019-08-26",
+      "endDate": "Present",
+      "courses": [ "Data Structures & Algorithms", "Linear Algebra & Machine Learning", "Digital Systems & Computer Design", "Cyber-Physical Systems", "Basic Circuit Analysis I-II", "Microelectronic Circuits I" ]
+    },
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Electrical Engineering (expected Spring, 2024)",
+      "studyType": "M.S.",
+      "startDate": "2022-08-22",
+      "endDate": "Present",
+      "courses": ""
+    }
+  ],
+  "work": [
+    {
+      "company": "University of Hawaii at Manoa",
+      "position": "Mathematics Grader",
+      "website": "",
+      "startDate": "2021-08-23",
+      "endDate": "2021-12-17",
+      "summary": "",
+      "highlights": [
+        "Graded weekly assignments for Calculus 3",
+        "Wrote solution keys for students to reference"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "website": "",
+      "position": "Professional organization involvement",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        "Webmaster, IEEE Student Branch Executive Board, 2022-Present",
+        "Pledge, Eta Kappa Nu (IEEE-HKN), 2022-Present",
+        "Member, IEEE Student Branch, 2019-Present"
+      ]
+    },
+    {
+      "organization": "",
+      "website": "",
+      "position": "Volunteer work",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": ["Hawaii Foodbank, 2021-2022", "Oahu SPCA, 2020-2021"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Provost Achievement Scholarship",
+      "date": "2019-present",
+      "awarder": "University of Hawaii at Manoa",
+      "summary": "4 year scholarship awarded to incoming Hawaii high school students with a cumulative GPA of 3.8 and above."
+    },
+    {
+      "title": "Manoa Service Award",
+      "date": "2020-2022",
+      "awarder": "University of Hawaii at Manoa",
+      "summary": "Scholarship awarded to students who maintain a GPA of 2.0 and above and complete 50 hours of community service."
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}

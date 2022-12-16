@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="WatchTower | Eliya Nakamura | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/eliyanak.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Eliya Nakamura | Professional Portfolio">
+    <meta property="og:url" content="https://eliyanak.github.io/projects/watchtower.html">
+    <meta property="og:title" content="WatchTower | Eliya Nakamura | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/eliyanak.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/skyblue.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>WatchTower | Eliya Nakamura | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Eliya Nakamura</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">WatchTower</h1>
+ <div class="text-center p-4">
+  <img width="75%" src="../img/wt-setup.png" class="img-thumbnail" />
+</div>
+
+<p>WatchTower is an IoT system that was created as a final project for EE 368: Cyber-Physical Systems. Its purpose is to give beachgoers an easy way to access current beach conditions at any Hawaii beach. Each individual Raspberry Pi device is calibrated with IBM Cloud and Node-RED to display information for a specific beach, but other devices can easily be connected and calibrated for any additional beaches. <a href="https://www.youtube.com/watch?v=a2mU8cClEGM">This video</a> provides a summary and demonstration of how the system operates.</p>
+
+<p>The device has a physical component, which displays the current beach condition (low, medium, high, or extreme) on a spinner display powered by a Servo. The display also has an LED light, which illuminates to notify users that there is a special alert and that they should check the Hawaii Beach Safety website for more details. There is also a software component which displays information about every device connected to the system, the beach it is currently calibrated to, and its current condition.</p>
+
+<p>Below is the Node-RED flow setup that we used in order to send the beach data to each of our Raspberry Pi devices.</p>
+
+<div class="text-center p-4">
+  <img width="60%" src="../img/wt-nodered.PNG" class="img-thumbnail" />
+</div>
+
+<p>I was mainly responsible for much of the Node-RED code illustrated above, which was used to retrieve the data from the Hawaii Beach Safety API and extract the relevant information such as the beach’s current conditions. This data was then run through a JSON parser so that it could be sent to the Raspberry Pi devices.</p>
+
+<p>Working on this project was one of my first true team engineering experiences. I learned a lot about how to implement an IoT system, as well as how to develop a device that uses both software and hardware components in tandem.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

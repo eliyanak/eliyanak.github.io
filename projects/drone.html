@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Drone Programming and Control | Eliya Nakamura | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/eliyanak.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Eliya Nakamura | Professional Portfolio">
+    <meta property="og:url" content="https://eliyanak.github.io/projects/drone.html">
+    <meta property="og:title" content="Drone Programming and Control | Eliya Nakamura | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/eliyanak.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/skyblue.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Drone Programming and Control | Eliya Nakamura | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Eliya Nakamura</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Drone Programming and Control</h1>
+ <div class="text-center p-4">
+  <img width="75%" src="../img/drone/ourdrone.png" class="img-thumbnail" />
+</div>
+
+<p>For my junior project, I was part of a Vertically Integrated Project (VIP) that taught us the basics of drone operation, programming, and security. We started by installing an Ubuntu virtual machine on each of our devices so we could run a series of tutorial simulations provided by ArduPilot. This software utilized a commmand line to control various aspects of the drone such as its flight mode, home location, and current missions. These simulations allowed us to familiarize ourselves with the software before we moved on to working with the actual drone.</p>
+
+<p>Once we grew comfortable with that, we then moved on to learning how to operate the drone with its included joystick controller. With the practice we had through the earlier tutorials, we then began to utilize software tools such as QGroundControl to remotely control the drone’s path, speed, and other flight characteristics.</p>
+
+<div class="text-center p-4">
+  <img width="60%" src="../img/drone/drone_qgc.png" class="img-thumbnail" />
+</div>
+
+<p>Our next steps involved learning how to write Python scripts that automatically completed tasks similarly to what we did with QGroundControl. Below is a sample program that tells the drone to takeoff and fly to a specified altitude.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">dronekit</span> <span class="kn">import</span> <span class="n">connect</span>
+<span class="n">vehicle</span> <span class="o">=</span> <span class="n">connect</span><span class="p">(</span><span class="s">'0.0.0.0:14550'</span><span class="p">,</span> <span class="n">wait_ready</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">arm_and_takeoff</span><span class="p">(</span><span class="n">aTargetAltitude</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Basic pre-arm checks"</span><span class="p">)</span>
+    <span class="c1"># Don't try to arm until autopilot is ready
+</span>    <span class="k">while</span> <span class="ow">not</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">is_armable</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">" Waiting for vehicle to initialise..."</span><span class="p">)</span>
+        <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"Arming motors"</span><span class="p">)</span>
+    <span class="c1"># Copter should arm in GUIDED mode
+</span>    <span class="n">vehicle</span><span class="p">.</span><span class="n">mode</span> <span class="o">=</span> <span class="n">VehicleMode</span><span class="p">(</span><span class="s">"GUIDED"</span><span class="p">)</span>
+    <span class="n">vehicle</span><span class="p">.</span><span class="n">armed</span> <span class="o">=</span> <span class="bp">True</span>
+
+    <span class="c1"># Confirm vehicle armed before attempting to take off
+</span>    <span class="k">while</span> <span class="ow">not</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">armed</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">" Waiting for arming..."</span><span class="p">)</span>
+        <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"Taking off!"</span><span class="p">)</span>
+    <span class="n">vehicle</span><span class="p">.</span><span class="n">simple_takeoff</span><span class="p">(</span><span class="n">aTargetAltitude</span><span class="p">)</span>  <span class="c1"># Take off to target altitude
+</span>
+    <span class="c1"># Wait until the vehicle reaches a safe height before processing the goto
+</span>    <span class="c1">#  (otherwise the command after Vehicle.simple_takeoff will execute
+</span>    <span class="c1">#   immediately).
+</span>    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">" Altitude: "</span><span class="p">,</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">global_relative_frame</span><span class="p">.</span><span class="n">alt</span><span class="p">)</span>
+        <span class="c1"># Break and return from function just below target altitude.
+</span>        <span class="k">if</span> <span class="n">vehicle</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">global_relative_frame</span><span class="p">.</span><span class="n">alt</span> <span class="o">&gt;=</span> <span class="n">aTargetAltitude</span> <span class="o">*</span> <span class="mf">0.95</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Reached target altitude"</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">arm_and_takeoff</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Click <a href="https://docs.google.com/presentation/d/1Spg-cYv_HIr1Y0wLw7PTHKQTtB-F1mT2O4TgucA4lBY/edit?usp=sharing">here</a> to view additional information.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
