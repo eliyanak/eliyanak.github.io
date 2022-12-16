@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/arduino/circuit.PNG
+image: img/manoa-eateries/manoa_eateries_green.png
 title: "Manoa Eateries"
 date: 2022
 published: true
@@ -27,4 +27,6 @@ In addition to helping design the landing page, I was responsible for implementi
   <img width="60%" src="../img/manoa-eateries/edituser.png">
 </div>
 
-I also wrote the website testing scripts used in TestCafe, which allowed us to verify that our website functioned the way that we intended it to. Additionally, I deployed our project to Digital Ocean, giving users an actual URL to view the website instead of having to download the source code to their machine. Click [here](http://143.110.235.49/) to visit our project deployment page.
+I also wrote the testing scripts used in TestCafe, which allowed us to verify that our website functioned the way that we intended it to. Additionally, I deployed our project to Digital Ocean, giving users an actual URL to view the website instead of having to download the source code to their machine. Click [here](http://143.110.235.49/) to visit our project deployment page.
+
+I enjoyed working on this project and getting the chance to apply what we learned in JavaScript, HTML/CSS, Bootstrap, React, Meteor, and Github during the semester. This also provided me with valuable teamwork experience and the chance to practice agile project management. 
